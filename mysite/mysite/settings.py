@@ -21,6 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'iqo1u_@8e)^6c8#(l3bk5%(@$&2u3$yn+_6k#cd^tsw26h9uf+'
+STRIPE_PUBLIC_KEY = 'pk_test_51M3wInLNSjrqY5Gx5mkCL7srYAN0FMJZ9CMEq5bKD9LXda2Cn9lk1omvWrJdGj54sRfGu0S72clI4qU9tWfQHWPY00RLxLJUgx'
+STRIPE_API_KEY = 'sk_test_51M3wInLNSjrqY5Gx9USy5Th2tnOkaO9RFXF3wG6DX3KgM6Wikp8UG1vKFxPtuCRFgo8VwYihTr8bzR1cXJlHByuo0027yzapGt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'stripe_shop',
 ]
 
 MIDDLEWARE = [
